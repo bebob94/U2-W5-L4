@@ -38,41 +38,41 @@ main {
 
 #task1 {
   transform: rotate(-3deg);
-  animation: addCard1 2s;
+  animation: addCard1 2s backwards;
   z-index: 1;
 }
 #task2 {
   transform: rotate(10deg) translate(40px, 25px);
-  animation: addCard2 2s 2s;
+  animation: addCard2 2s 2s backwards;
 }
 #task3 {
   transform: rotate(-9deg) translate(50px, 40px);
-  animation: addCard3 2s 4s;
+  animation: addCard3 2s 4s backwards;
   z-index: 1;
 }
 #task4 {
   transform: rotate(10deg) translate(80px, 0px);
-  animation: addCard4 2s 6s;
+  animation: addCard4 2s 6s backwards;
   z-index: 1;
 }
 #task5 {
   transform: rotate(-3deg) translate(0px, -140px);
-  animation: addCard5 2s 8s;
+  animation: addCard5 2s 8s backwards;
   z-index: 1;
 }
 #task6 {
   transform: rotate(-5deg) translate(0px, -145px);
-  animation: addCard6 2s 10s;
+  animation: addCard6 2s 10s backwards;
   z-index: 1;
 }
 #task7 {
   transform: rotate(-2deg) translate(0px, -135px);
-  animation: addCard7 2s 12s;
+  animation: addCard7 2s 12s backwards;
   z-index: 1;
 }
 #task8 {
   transform: rotate(3deg) translate(0px, -140px);
-  animation: addCard8 2s 14s;
+  animation: addCard8 2s 14s backwards;
   z-index: 1;
 }
 
@@ -120,14 +120,17 @@ main {
 @keyframes addCard1 {
   from {
     scale: 5;
+    visibility: hidden;
   }
   to {
     scale: 1;
+    visibility: visible;
   }
 }
 @keyframes addCard2 {
   from {
     scale: 5;
+    visibility: hidden;
   }
   to {
     scale: 1;
@@ -136,6 +139,7 @@ main {
 @keyframes addCard3 {
   from {
     scale: 5;
+    visibility: hidden;
   }
   to {
     scale: 1;
@@ -144,6 +148,7 @@ main {
 @keyframes addCard4 {
   from {
     scale: 5;
+    visibility: hidden;
   }
   to {
     scale: 1;
@@ -152,6 +157,7 @@ main {
 @keyframes addCard5 {
   from {
     scale: 5;
+    visibility: hidden;
   }
   to {
     scale: 1;
@@ -160,6 +166,7 @@ main {
 @keyframes addCard6 {
   from {
     scale: 5;
+    visibility: hidden;
   }
   to {
     scale: 1;
@@ -168,6 +175,7 @@ main {
 @keyframes addCard7 {
   from {
     scale: 5;
+    visibility: hidden;
   }
   to {
     scale: 1;
@@ -176,6 +184,7 @@ main {
 @keyframes addCard8 {
   from {
     scale: 5;
+    visibility: hidden;
   }
   to {
     scale: 1;
