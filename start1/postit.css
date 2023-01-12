@@ -10,6 +10,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: dimgrey;
+  overflow: hidden;
 }
 
 .tasks {
@@ -20,6 +21,8 @@ main {
   height: 15em;
   width: 20em;
   margin: 0em 1em;
+  line-height: 3em;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3));
   box-shadow: 1px 2px 20px 1px black;
   font-family: Indie Flower;
   font-weight: 500;
@@ -29,10 +32,14 @@ main {
   font-size: 3em;
   font-weight: 700;
 }
+.tasks p {
+  font-size: 2em;
+}
 
 #task1 {
   transform: rotate(-3deg);
   animation: addCard1 2s;
+  z-index: 1;
 }
 #task2 {
   transform: rotate(10deg) translate(40px, 25px);
@@ -41,59 +48,73 @@ main {
 #task3 {
   transform: rotate(-9deg) translate(50px, 40px);
   animation: addCard3 2s 4s;
+  z-index: 1;
 }
 #task4 {
   transform: rotate(10deg) translate(80px, 0px);
   animation: addCard4 2s 6s;
+  z-index: 1;
 }
 #task5 {
   transform: rotate(-3deg) translate(0px, -140px);
   animation: addCard5 2s 8s;
+  z-index: 1;
 }
 #task6 {
   transform: rotate(-5deg) translate(0px, -145px);
   animation: addCard6 2s 10s;
+  z-index: 1;
 }
 #task7 {
   transform: rotate(-2deg) translate(0px, -135px);
   animation: addCard7 2s 12s;
+  z-index: 1;
 }
 #task8 {
   transform: rotate(3deg) translate(0px, -140px);
   animation: addCard8 2s 14s;
+  z-index: 1;
 }
 
 #task1:hover {
   transform: scale(1.3);
   box-shadow: 5px 5px 20px 10px black;
+  z-index: 2;
 }
 #task2:hover {
   transform: scale(1.3);
   box-shadow: 5px 5px 20px 10px black;
+  z-index: 2;
 }
 #task3:hover {
   transform: scale(1.3);
   box-shadow: 5px 5px 20px 10px black;
+  z-index: 2;
 }
 #task4:hover {
   transform: scale(1.3);
   box-shadow: 5px 5px 20px 10px black;
+  z-index: 2;
 }
 #task5:hover {
   transform: scale(1.3) translate(0px, -140px);
   box-shadow: 5px 5px 20px 10px black;
+  z-index: 2;
 }
 #task6:hover {
   transform: scale(1.3) translate(0px, -145px);
   box-shadow: 5px 5px 20px 10px black;
+  z-index: 2;
 }
 #task7:hover {
   transform: scale(1.3) translate(0px, -135px);
   box-shadow: 5px 5px 20px 10px black;
+  z-index: 2;
 }
 #task8:hover {
   transform: scale(1.3) translate(0px, -140px);
   box-shadow: 5px 5px 20px 10px black;
+  z-index: 2;
 }
 
 @keyframes addCard1 {
